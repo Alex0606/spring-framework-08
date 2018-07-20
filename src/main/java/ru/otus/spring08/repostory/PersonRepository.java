@@ -10,9 +10,9 @@ public interface PersonRepository {
 
     Person getById(int id);
 
-    Person getFirst();
+    //Person getFirst();
 
-    List<Person> getAll();
+    //List<Person> getAll();
 
     //Person getByName(String name);
 }

@@ -25,20 +25,4 @@ public class PersonRepositoryJpa implements PersonRepository {
     public Person getById(int id) {
         return em.find(Person.class, id);
     }
-
-    @Override
-    public Person getFirst() {
-        TypedQuery<Person> query = em.createQuery(
-            "select e from Employee e where e.id = 1",
-            Person.class);
-        return query.getSingleResult();
-    }
-
-    @Override
-    public List<Person> getAll() {
-        TypedQuery<Person> query = em.createQuery(
-                "select e from Employee e",
-                Person.class);
-        return query.getResultList();
-    }
 }
