@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface PersonRepository {
 
-    void insert(Person p);
+    //void insert(Person p);
 
     Person getById(int id);
 
